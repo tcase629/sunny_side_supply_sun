@@ -1,0 +1,143 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sun {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.3);
+  }
+  
+  .flame {
+    position: absolute;
+    top: -25.5%;
+    left: 50%;
+    width: 50px;
+    height: 105px;
+    border: 5px solid black;
+    border-radius: 1px 100px;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.2);
+  }
+  
+  .flame:nth-child(2) {
+    position:absolute;
+    top:-25%;
+    left:7%;
+    width: 55px;
+    height: 145px;
+    transform:rotate(-30deg);
+  }
+  
+  .flame:nth-child(3) {
+    position:absolute;
+    top:8%;
+    left:-12%;
+    transform:rotate(-60deg);
+  }
+  
+  .flame:nth-child(4) {
+    position:absolute;
+    top:35%;
+    left:-25%;
+    width: 55px;
+    height: 145px;
+    transform:rotate(-90deg);
+  }
+  
+  .flame:nth-child(5) {
+    position:absolute;
+    top:70%;
+    left:-10%;
+    transform:rotate(-120deg);
+  }
+  
+  .flame:nth-child(6) {
+    position:absolute;
+    top:auto;
+    bottom:-27%;
+    left:10%;
+    width: 55px;
+    height: 145px;
+    transform:rotate(30deg);
+  }
+  
+  .flame:nth-child(7) {
+    position:absolute;
+    top:auto;
+    bottom:-25.5%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  
+  .flame:nth-child(8) {
+    position:absolute;
+    top:auto;
+    bottom:-26%;
+    left:auto;
+    right:8%;
+    width: 55px;
+    height: 145px;
+    transform:rotate(-30deg);
+  }
+  
+  .flame:nth-child(9) {
+    position:absolute;
+    top:auto;
+    bottom:8%;
+    left:auto;
+    right:-12%;
+    transform:rotate(-60deg);
+  }
+  
+  .flame:nth-child(10) {
+    position:absolute;
+    top:auto;
+    bottom:35%;
+    left:auto;
+    right: -25%;
+    width: 55px;
+    height: 145px;
+    transform:rotate(-90deg);
+  } 
+  
+  .flame:nth-child(11) {
+    position:absolute;
+    top:5%;
+    left:auto;
+    right:-10%;
+    transform:rotate(-120deg);
+  }
+  
+  .flame:last-child {
+    position:absolute;
+    top:-26%;
+    right:9%;
+    left:auto;
+    width: 55px;
+    height: 145px;
+    transform:rotate(30deg);
+  }
+  
+  .text {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Luckiest Guy', cursive;
+  }
